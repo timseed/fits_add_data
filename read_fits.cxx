@@ -1,6 +1,4 @@
-#ifdef __cplusplus
 #include <iostream>
-#endif
 #include <fitsio.h>  // Include the CFITSIO header
 
 void readFITS(const char* filename) {
@@ -51,6 +49,9 @@ void readFITS(const char* filename) {
 }
 
 int main(int argc, char **argv) {
-    readFITS(argv[1]);
+    if (argc==2)
+        readFITS(argv[1]);
+    else
+        std::cout << "Expected a Filename as a parameter." << std::endl;
     return 0;
 }
