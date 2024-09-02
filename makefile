@@ -5,7 +5,7 @@ FITS_INCLUDE_PATH = /usr/local/include/fits/
 LIBS = -L/usr/local/lib -lcfitsio
 
 # Target executable name
-TARGET = read_fits
+TARGET = set_centre
 
 # Compiler
 CC = g++
@@ -15,7 +15,7 @@ CXX = g++
 CXXFLAGS = -Wall -std=c++11 -I$(FITS_INCLUDE_PATH)
 
 # Source files
-SRCS = read_fits.cpp
+SRCS = set_centre.cxx
 
 # Object files (derived from source files)
 OBJS = $(SRCS:.cpp=.o)
