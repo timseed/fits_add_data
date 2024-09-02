@@ -13,7 +13,7 @@ INCLUDEPATH += /usr/local/include/fits/
 LIBS += -L/usr/local/lib -l cfitsio
 
 SOURCES += \
-    read_fits.cxx
+    set_centre.cxx
 
 
 
